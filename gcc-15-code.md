@@ -1,6 +1,8 @@
 # This is 15.2.1 20260123 (Red Hat 15.2.1-7)
 
-## NO coverage flags: 29 Lines
+Store the `minicond.i` for comparison.
+
+## NO coverage flags : 29 Lines
 ```
         .file   "minicond.c"
         .text
@@ -163,7 +165,7 @@ _sub_D_00100_1:
 ```
 
 
-## --coverage -fcondition-coverage:  158 Lines
+## --coverage -fcondition-coverage : 158 Lines
 
 ```
 	.file	"minicond.c"
