@@ -1,0 +1,8 @@
+*~
+run
+*.gcda
+*.gcno
+*.i
+*.s
+*.gcov
+*.o
