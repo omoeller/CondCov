@@ -1,4 +1,5 @@
 GFLAGS:=--coverage -fcondition-coverage
+#GFLAGS:=--coverage
 CFLAGS:=$(GFLAGS) --save-temps
 
 OBJ:=main.o minicond.o
