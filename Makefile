@@ -2,6 +2,8 @@ GFLAGS:=--coverage -fcondition-coverage
 #GFLAGS:=--coverage
 CFLAGS:=$(GFLAGS) --save-temps
 
+CC:=/usr/bin/gcc
+
 OBJ:=main.o minicond.o
 
 .PHONY: run e1 e2 e12 cov gcovr
