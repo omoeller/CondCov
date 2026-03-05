@@ -34,6 +34,6 @@ gcovr:
 
 
 clean:
-	rm -f $(OBJ) run *.gcda *.gcno *.i *.s *.gcov *~
+	rm -f $(OBJ) run *.gcda *.gcno *.i *.s *.o *.obj *.gcov *~
 
 
