@@ -1,5 +1,5 @@
-#GFLAGS:=--coverage -fcondition-coverage
-GFLAGS:=--coverage
+GFLAGS:=--coverage -fcondition-coverage
+#GFLAGS:=--coverage
 CFLAGS:=$(GFLAGS) --save-temps
 
 TOOLDIR:=/usr
