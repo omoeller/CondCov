@@ -2,15 +2,17 @@ GFLAGS:=--coverage -fcondition-coverage
 #GFLAGS:=--coverage
 CFLAGS:=$(GFLAGS) --save-temps
 
-CC:=/usr/bin/gcc
-#CC:=/opt/gcc-11.3.0/bin/gcc
+TOOLDIR:=/usr
+#TOOLDIR:=/opt/gcc-14.3.0
+BINDIR:=$(TOOLDIR)/bin
+CC:=$(BINDIR)/gcc
 
 OBJ:=main.o minicond.o
 
 .PHONY: run e1 e2 e12 cov gcovr
 
 run: $(OBJ)
-	cc -o $@ $(^) -lgcov
+	LD_LIBRARY_PATH=$(TOOLDIR)/lib64:$${LD_LIBRARY_PATH} $(CC) -o $@ $(^) -lgcov
 
 all: run
 
@@ -31,7 +33,7 @@ e2: run
 	$(MAKE) cov gcovr
 
 cov:
-	gcov --conditions -t minicond.gcda
+	$(BINDIR)/gcov --conditions -t minicond.gcda
 
 gcovr:
 	gcovr --txt-metric branch --print-summary || echo "** No gcovr - sorry"

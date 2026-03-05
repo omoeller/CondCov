@@ -36,7 +36,6 @@ minicond:
 ```
 
 ## --coverage : 124 Lines
-
 ```
         .file   "minicond.c"
         .text
@@ -164,9 +163,7 @@ _sub_D_00100_1:
         .section        .note.GNU-stack,"",@progbits
 ```
 
-
 ## --coverage -fcondition-coverage : 158 Lines
-
 ```
 	.file	"minicond.c"
 	.text
