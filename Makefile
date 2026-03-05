@@ -3,6 +3,7 @@ GFLAGS:=--coverage -fcondition-coverage
 CFLAGS:=$(GFLAGS) --save-temps
 
 CC:=/usr/bin/gcc
+#CC:=/opt/gcc-11.3.0/bin/gcc
 
 OBJ:=main.o minicond.o
 
@@ -12,6 +13,9 @@ run: $(OBJ)
 	cc -o $@ $(^) -lgcov
 
 all: run
+
+version:
+	$(CC) --version
 
 e12: run
 	./run || true
