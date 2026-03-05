@@ -1,11 +1,13 @@
-GFLAGS:=--coverage -fcondition-coverage
-#GFLAGS:=--coverage
+#GFLAGS:=--coverage -fcondition-coverage
+GFLAGS:=--coverage
 CFLAGS:=$(GFLAGS) --save-temps
 
 TOOLDIR:=/usr
 #TOOLDIR:=/opt/gcc-14.3.0
-BINDIR:=$(TOOLDIR)/bin
-CC:=$(BINDIR)/gcc
+BINDIR:=$(TOOLDIR)/bin/
+#BINDIR:=$(TOOLDIR)/bin/arm-none-eabi-
+
+CC:=$(BINDIR)gcc
 
 OBJ:=main.o minicond.o
 
@@ -33,7 +35,7 @@ e2: run
 	$(MAKE) cov gcovr
 
 cov:
-	$(BINDIR)/gcov --conditions -t minicond.gcda
+	$(BINDIR)gcov --conditions -t minicond.gcda
 
 gcovr:
 	gcovr --txt-metric branch --print-summary || echo "** No gcovr - sorry"

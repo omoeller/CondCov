@@ -88,7 +88,7 @@ __gcov_.minicond:
         .section        .rodata
         .align 8
 .LC0:
-        .string "/home/oli/Workspace/GITHUB/CondCov/minicond.gcda"
+        .string "/<Path>/CondCov/minicond.gcda"
         .data
         .align 32
         .type   .LPBX0, @object
@@ -250,7 +250,7 @@ __gcov_.minicond:
 	.section	.rodata
 	.align 8
 .LC0:
-	.string	"/home/oli/Workspace/GITHUB/CondCov/minicond.gcda"
+	.string	"/<Path>/CondCov/minicond.gcda"
 	.data
 	.align 32
 	.type	.LPBX0, @object

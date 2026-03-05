@@ -1,4 +1,4 @@
-# Assembler from gcc (GCC) 11.3.0 (build from scratch on Centos-7)
+# Assembler from gcc (GCC) 11.3.0 (built from scratch on Centos-7)
 
 This is the `minicond.s` gcc output for comparison.
 
@@ -90,7 +90,7 @@ __gcov_.minicond:
 	.section	.rodata
 	.align 8
 .LC0:
-	.string	"/home/build/Workspace/CondCov/minicond.gcda"
+	.string	"/<Path>/CondCov/minicond.gcda"
 	.data
 	.align 32
 	.type	.LPBX0, @object

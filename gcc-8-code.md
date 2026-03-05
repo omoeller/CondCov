@@ -90,7 +90,7 @@ __gcov_.minicond:
 	.section	.rodata
 	.align 8
 .LC0:
-	.string	"/home/oli/Projects/Vincorion_V1/GIT/CondCov/minicond.gcda"
+	.string	"/<Path>/CondCov/minicond.gcda"
 	.data
 	.align 32
 	.type	.LPBX0, @object
