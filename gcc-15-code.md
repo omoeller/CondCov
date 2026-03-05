@@ -1,6 +1,6 @@
-# This is 15.2.1 20260123 (Red Hat 15.2.1-7)
+# Assembler from gcc (GCC) 15.2.1 20260123 (Red Hat 15.2.1-7)
 
-Store the `minicond.i` for comparison.
+This is the `minicond.s` gcc output for comparison.
 
 ## NO coverage flags : 29 Lines
 ```
